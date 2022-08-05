@@ -4,8 +4,8 @@ figure {
 }
 
 figure img {
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 300px;
 }
 
 figcaption {
@@ -25,8 +25,8 @@ figcaption h4 {
 
 @media screen and (min-width: 800px) {
   figure img {
+    height: 800px;
     width: 600px;
-    height: 400px;
   }
 }
 
