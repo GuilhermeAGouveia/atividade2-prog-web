@@ -1,0 +1,51 @@
+
+#timeline li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 100px;
+    color: white;
+    overflow: hidden;
+}
+
+#timeline li::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(70, 4, 100);
+    z-index: -1;
+}
+
+#timeline li::after {
+    content: "";
+    position: absolute;
+    top: calc(-100% + 10px);
+    left: 0px;
+    height: 100%;
+    transition: .2s;
+    width: 100%;
+    z-index: -1;
+    background: rgb(0, 25, 80);
+}
+
+
+#timeline li:hover::after {
+    top: 0px;
+}
+
+#timeline li:hover {
+    background: transparent;
+}
+#timeline li h4:nth-child(1) {
+    width: 20%;
+}
+
+#timeline li h4:nth-child(3){
+    width: 40%;
+    text-align: center;
+}
